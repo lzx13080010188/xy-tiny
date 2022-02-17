@@ -14,7 +14,6 @@ import com.xr.tiny.modules.ums.mapper.UmsAdminLoginLogMapper;
 import com.xr.tiny.modules.ums.mapper.UmsAdminMapper;
 import com.xr.tiny.modules.ums.mapper.UmsResourceMapper;
 import com.xr.tiny.modules.ums.mapper.UmsRoleMapper;
-import com.macro.mall.tiny.modules.ums.model.*;
 import com.xr.tiny.modules.ums.model.*;
 import com.xr.tiny.modules.ums.service.UmsAdminCacheService;
 import com.xr.tiny.modules.ums.service.UmsAdminRoleRelationService;

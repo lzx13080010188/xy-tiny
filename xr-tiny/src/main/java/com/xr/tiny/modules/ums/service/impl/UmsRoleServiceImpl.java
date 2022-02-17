@@ -8,7 +8,6 @@ import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.xr.tiny.modules.ums.mapper.UmsMenuMapper;
 import com.xr.tiny.modules.ums.mapper.UmsResourceMapper;
 import com.xr.tiny.modules.ums.mapper.UmsRoleMapper;
-import com.macro.mall.tiny.modules.ums.model.*;
 import com.xr.tiny.modules.ums.model.*;
 import com.xr.tiny.modules.ums.service.UmsAdminCacheService;
 import com.xr.tiny.modules.ums.service.UmsRoleMenuRelationService;

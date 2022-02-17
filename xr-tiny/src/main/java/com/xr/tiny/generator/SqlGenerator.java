@@ -35,7 +35,7 @@ public class SqlGenerator {
     }
 
     public static void main(String[] args) {
-        generateSql(SysLog.class.getName(),"sys_log","id","/Volumes/lizhuoxuanData/gitcode/mall-tiny/src/main/java/com/macro" +
+        generateSql(SysLog.class.getName(),"sys_log","id","/Volumes/lizhuoxuanData/gitcode/xr-tiny/src/main/java/com/macro" +
                 "/mall/tiny/generator/test.sql");
     }
 

@@ -15,4 +15,4 @@ logging:
     path: ./logs
   level:
     root: info
-    com.macro.mall: info
+    com.xr: info

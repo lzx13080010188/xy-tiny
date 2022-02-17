@@ -1,7 +1,6 @@
 package com.xr.tiny.security.config;
 
 import com.xr.tiny.security.util.JwtTokenUtil;
-import com.macro.mall.tiny.security.component.*;
 import com.xr.tiny.security.component.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnBean;
