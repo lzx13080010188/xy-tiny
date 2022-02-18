@@ -4,17 +4,17 @@
 
     <!-- 通用查询映射结果 -->
     <resultMap id="BaseResultMap" type="com.xr.tiny.modules.log.model.SysLog">
-        <id column="ID" property="id" />
-        <result column="REGISTER_NAME" property="registerName" />
-        <result column="USER_ID" property="userId" />
-        <result column="USER_NAME" property="userName" />
-        <result column="PERATION" property="peration" />
-        <result column="METHOD" property="method" />
-        <result column="PARAMS" property="params" />
-        <result column="IP" property="ip" />
-        <result column="CREATE_DATE" property="createDate" />
-        <result column="OPERATE_RESULT" property="operateResult" />
-        <result column="ABNORMITY" property="abnormity" />
+        <id column="id" property="id" />
+        <result column="register_name" property="registerName" />
+        <result column="user_id" property="userId" />
+        <result column="user_name" property="userName" />
+        <result column="peration" property="peration" />
+        <result column="method" property="method" />
+        <result column="params" property="params" />
+        <result column="ip" property="ip" />
+        <result column="create_date" property="createDate" />
+        <result column="operate_result" property="operateResult" />
+        <result column="abnormity" property="abnormity" />
     </resultMap>
 
 </mapper>

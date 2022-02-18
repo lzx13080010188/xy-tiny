@@ -1,6 +1,7 @@
 package com.xr.tiny.generator;
 
 import com.baomidou.mybatisplus.core.toolkit.StringUtils;
+import com.xr.tiny.common.log.SysLogVo;
 import com.xr.tiny.modules.log.model.SysLog;
 import lombok.extern.slf4j.Slf4j;
 
@@ -35,8 +36,8 @@ public class SqlGenerator {
     }
 
     public static void main(String[] args) {
-        generateSql(SysLog.class.getName(),"sys_log","id","/Volumes/lizhuoxuanData/gitcode/xr-tiny/src/main/java/com/macro" +
-                "/mall/tiny/generator/test.sql");
+        generateSql(SysLogVo.class.getName(),"sys_log","id","/Volumes/lizhuoxuanData/gitcode/xr-tiny/src/main/java/com/xr" +
+                "/tiny/generator/test.sql");
     }
 
     public static String generateSql(String className,String tableName,String primaryKey,String filePath){
@@ -52,7 +53,7 @@ public class SqlGenerator {
                 //column.append(" \n `"+f.getName()+"`").append(varchar);
                 column.append(getColumnSql(f));
             }
-            String sqlPrimaryKey =StringUtils.camelToUnderline(primaryKey).toUpperCase();
+            String sqlPrimaryKey =StringUtils.camelToUnderline(primaryKey).toLowerCase();
             StringBuffer sql = new StringBuffer();
             sql.append("\n DROP TABLE IF EXISTS `"+tableName+"`; ")
                     .append(" \n CREATE TABLE `"+tableName+"`  (")
@@ -77,7 +78,7 @@ public class SqlGenerator {
             log.info(field.getName() + ":"+field.getType().getName()+" 需要单独创建表");
             return "";
         }
-        String column = StringUtils.camelToUnderline(field.getName()).toUpperCase();
+        String column = StringUtils.camelToUnderline(field.getName()).toLowerCase();
         String sql = String.format(tpl,column,sqlType.toUpperCase());
         return sql;
     }
